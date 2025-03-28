@@ -1,0 +1,121 @@
+@font-face {
+    font-family: 'titulo';
+    src: url(fonts/font1/Koulen-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'texto';
+    src: url(fonts/font2/Saira-VariableFont_wdth\,wght.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: "texto";
+}
+body {
+  /* background-color: #333; */
+
+  background-color: #e3dfd6;
+  color: #f4f4f4;
+  overflow-x: hidden;
+}
+
+
+h2,h1{
+  font-size: 2em;
+  font-family: "titulo";
+  letter-spacing: 1.5px;
+}
+
+
+
+/*titulo pricipal*/
+
+.maps-title{
+    
+
+    background-image: url(image/maps/fin-del-mundo.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+    align-content: center;
+    width: 100%;
+    height: 40vh;
+    margin-bottom: 60px;
+}
+
+
+
+.opaco{
+
+  background-color: #101010c5;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  align-content: center;
+
+}
+
+
+
+.map-container{
+
+
+  color: #000000;
+
+}
+
+.map-content{
+
+  margin: 0 20px 0 80px;
+
+
+}
+
+.map-card img{
+
+width: 600px;
+box-shadow: 0 0 12px 0 #000000;
+
+}
+
+.map-card{
+
+  margin: 60px auto;
+  padding: 20px;
+  box-shadow: 0 0 50px 0 #f4f4f411;
+  max-width: 100%;
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 50px;
+  color: #000000;
+  background-color: #f4f4f47a;
+
+}
+
+/* animacion */
+.map-card img {
+
+  box-shadow: 0 0 12px 0 #000000;
+  transition: transform 0.2s ease; 
+}
+
+.map-card img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px 0 #000000; 
+}
+
+.--padgmap{
+
+  margin: 0 20px;
+  padding: 20px;
+  padding-right: 40px;
+}

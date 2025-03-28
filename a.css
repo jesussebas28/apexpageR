@@ -1,0 +1,120 @@
+
+@font-face {
+    font-family: 'titulo';
+    src: url(fonts/font1/Koulen-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'texto';
+    src: url(fonts/font2/Saira-VariableFont_wdth\,wght.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: "texto";
+}
+body {
+  /* background-color: #333; */
+
+  background-color: #e3dfd6;
+  color: #f4f4f4;
+  overflow-x: hidden;
+}
+/* Estilo del header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+    background-color: #B93038;
+    width: 100%;
+    height: 80px;
+    position: sticky;
+    top: 0;
+    z-index: 3;
+}
+
+.logo img {
+    width: 75px;
+    display: block;
+}
+
+/* Estilo de navegación */
+.nav-links {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    position: relative; /* Necesario para el menú desplegable */
+    margin: 0 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #f4f4f4;
+    font-weight: bold;
+    position: relative;
+    padding: 10px;
+}
+
+/* Estilo del submenú */
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #333;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    z-index: 10;
+}
+
+.dropdown-menu li {
+    width: 200px; /* Ajusta el ancho según tus necesidades */
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: 10px;
+    color: #f4f4f4;
+    text-decoration: none;
+    font-weight: normal;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.dropdown-menu a:hover {
+    background-color: #B93038; /* Color de fondo al pasar el cursor */
+}
+
+/* Mostrar el submenú al pasar el mouse */
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* Efecto línea al pasar el cursor en enlaces principales */
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+    height: 2px;
+    background-color: #f4f4f4;
+    display: none;
+}
+
+.nav-links a:hover::after {
+    display: block;
+}

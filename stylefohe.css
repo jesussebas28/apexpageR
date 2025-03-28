@@ -1,0 +1,296 @@
+
+
+
+
+/*header*/
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 30px;
+  /* background-color: #101010; */
+  background-color: #B93038;
+  width: 100%;
+  height: 80px;
+
+  
+}
+
+
+header{
+
+  position:sticky;
+  top: 0;
+  z-index: 3;
+
+}
+
+
+.logo img {
+    width: 75px;
+    display: block;
+  }
+  .nav-links {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+  }
+  .nav-links li {
+    margin: 0 20px;
+  }
+  .nav-links a {
+    color: #f4f4f4;
+  
+  }
+  .nav-links span{
+
+    color: #f4f4f4;
+  }
+  
+  .nav-links a {
+    color: #f4f4f4;
+    text-decoration: none;
+    position: relative;
+  }
+  
+  .nav-links a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px; /* Ajusta la posición de la línea */
+    width: 100%;
+    height: 2px; /* Grosor de la línea */
+    background-color: #f4f4f4;
+    display: none; /* Oculta la línea por defecto */
+  }
+  
+  .nav-links a:hover::after {
+    display: block; /* Muestra la línea al pasar el cursor */
+  }
+  
+  /*menu desplegable*/
+
+  .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    background-color: #333;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    z-index: 10;
+    
+}
+
+.dropdown-menu li {
+    width: 200px; /* Ajusta el ancho según tus necesidades */
+
+  }
+
+.dropdown-menu a {
+    display: block;
+    padding: 10px;
+    color: #f4f4f4;
+    text-decoration: none;
+    font-weight: normal;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.dropdown-menu a:hover {
+    background-color: #B93038; /* Color de fondo al pasar el cursor */
+}
+
+/* Mostrar el submenú al pasar el mouse */
+.dropdown:hover .dropdown-menu {
+    display: block;
+
+
+}
+
+/* Efecto línea al pasar el cursor en enlaces principales */
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+    height: 2px;
+    background-color: #f4f4f4;
+    display: none;
+}
+
+.nav-links a:hover::after {
+    display: block;
+}
+  
+
+
+
+
+/* Footer */
+footer {
+    display: flex;
+    flex-wrap: wrap; /* Para soportar dispositivos más pequeños */
+    justify-content: space-around;
+    align-items: center;
+    padding: 40px 30px;
+    background-color: #101010;
+    color: #f4f4f4;
+    width: 100%;
+    text-align: center;
+    height: 200px;
+  }
+  
+  .footer-logo {
+
+    align-items: center;
+
+  }
+  .content-2icon{
+    display: flex ;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+
+  
+  .--ea {
+    width: 40px !important;
+  }
+  
+  .--respawn {
+    width: 140px !important;
+  }
+  
+  .--apex{
+
+    width: 70px;
+
+
+  }
+  .footer-links {
+    margin: 15px 0;
+  }
+  
+  .nav-links-footer {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    list-style: none;
+    padding: 0;
+  }
+  
+  .nav-links-footer a {
+    color: #f4f4f4;
+    text-decoration: none;
+    font-size: 1em;
+    position: relative;
+  }
+  
+  .nav-links-footer a::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #f4f4f4;
+  
+  }
+  
+  .nav-links-footer a:hover::after {
+    width: 100%; /* Línea animada en hover */
+  }
+  
+  .footer-social {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .footer-social img {
+    width: 50px !important;
+    height: 50px !important;
+    transition: 0.1s;
+  }
+  
+  .footer-social img:hover {
+    transform: scale(1.1); /* Efecto de zoom en hover */
+  }
+  
+  footer p {
+    flex-basis: 100%; /* Ocupa toda la fila en pantallas pequeñas */
+    font-size: 12px;
+    opacity: 0.8;
+
+  }
+
+  .dropdown-footer{
+
+    position: relative;
+
+  }
+
+/*menu desplegable*/
+  .dropdown-menu--footer {
+    position: absolute;
+    top: -220px;
+    background-color: #333;
+    list-style: none;
+    margin: 0;
+    padding: 10px;
+    display: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    z-index: 10;
+    
+}
+
+.dropdown-menu--footer li {
+    width: 200px; /* Ajusta el ancho según tus necesidades */
+
+  }
+
+.dropdown-menu--footer a {
+    display: block;
+    padding: 10px;
+    color: #f4f4f4;
+    text-decoration: none;
+    font-weight: normal;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.dropdown-menu--footer a:hover {
+    background-color: #B93038; /* Color de fondo al pasar el cursor */
+}
+
+/* Mostrar el submenú al pasar el mouse */
+.dropdown-footer:hover .dropdown-menu--footer {
+    display: block;
+
+
+}
+
+/* Efecto línea al pasar el cursor en enlaces principales */
+.nav-links-footer a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+    height: 2px;
+    background-color: #f4f4f4;
+    display: none;
+}
+
+.nav-links-footer a:hover::after {
+    display: block;
+}
+  
+  
+  
+
+
+  

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apex Legends</title>
+    <link rel="shortcut icon" href="image/apex_logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="stylefohe.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <!-- listo -->
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="image/apex-white-nav-logo.svg" alt="Apex Logo" />
+            </a>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li class="dropdown">
+                    <span style="cursor: pointer;">Acerca de</span>
+                    <ul class="dropdown-menu">
+                        <li><a href="conocerLeyendas.html">Leyendas</a></li>
+                        <li><a href="notasparche.html">Notas del parche</a></li>
+                        <li><a href="pcrequeri.html">Requerimientos de PC</a></li>
+                    </ul>
+                </li>
+                
+                <li><a href="productos.html">Productos</a></li>
+
+            </ul>
+        </nav>
+        <script src="javascript/downmenu.js"></script>
+
+    </header>
+
+    <main>
+
+        <div class="presentation-container">
+            <div class="presentation-background-container">
+                <h1>APEX LEGENDS™</h1>
+                <p>
+                    Elige a tu personaje. Reúne a tu pelotón. Demuéstra a todo el mundo
+                    de qué están hechas las leyendas.
+                </p>
+
+                <div class="plataforms">
+                        <img src="image/plataforms-icon/electronic-arts-1.svg" alt="" />
+                        <img src="image/plataforms-icon/icons8-epic-games.svg" alt="" />
+                        <img src="image/plataforms-icon/icons8-nintendo-switch-logo.svg" alt="" />
+                        <img src="image//plataforms-icon/icons8-playstation.svg" alt="" />
+                        <img src="image/plataforms-icon/icons8-steam.svg" alt="" />
+                        <img src="image/plataforms-icon/icons8-windows-10.svg" alt="" />
+                        <img src="image/plataforms-icon/icons8-xbox.svg" alt="" />
+                    
+                </div>
+            </div>
+            <video autoplay muted loop src="image/apex-trailer.mp4"></video>
+
+        </div>
+
+
+        <section class="notices">
+            <h2>Lo ultimo</h2>
+            
+            <div class="notices-card-container">
+                
+                <a href="https://youtu.be/XJtHVrsADBw?si=R9h7FwTrZIGsSupL" target="_blank" class="notices-card">
+                    <img src="image/Apex_BeastMode_KeyArt_3810x2160__1_.png" alt="">
+                    <h2>Avance en el evento Modo Bestia</h2>
+                </a>                
+                
+                <a href="https://youtu.be/HRAKqGo_wBE?si=QMRnG4QbBl-eJObD" target="_blank" class="notices-card">
+                    <img src="image/apex-charters-much-logo.jpg" alt="">
+                    <h2>Apex Legends™: Actualización sobre la lucha contra trampas y el emparejamiento</h2>
+                </a>                
+                
+                <a href="https://youtu.be/3WZ5DNIzc_o?si=ZDZ7uC0aQUE6Ae2A" target="_blank" class="notices-card">
+                    <img src="image/lauchtrailer.jpg" alt="">
+                    <h2>Trailer de la nueva temporada de Apex Legends</h2>
+                </a>
+
+            </div>
+
+        </section>
+
+
+
+
+        <section class="characters-container">
+            <div class="charters-card-container">
+                <h2>Leyendas</h2>
+                <p>
+                    Elige entre un grupo único de forajidos, soldados, rebeldes y misántropos, cada uno con habilidades especiales que los hacen esenciales en batalla. Los Juegos Apex están abiertos para todos, pero solo los más fuertes se convertirán en leyendas.
+                </p>
+                <a class="btn" href="conocerLeyendas.html">
+                    <span>Conoce a las leyendas</span>
+                </a>
+            </div>
+            <img src="image/apex_charters_presentation.png" alt="" />
+        </section>
+
+        <section class="maps-container">
+            
+            <div class="carrusel">
+                <div class="imagenes">
+                    <img src="image/maps/luna-rota.jpg" alt="Luna rota">
+                    <img src="image/maps/electrodistricto.png" alt="Electrodistricto">
+                    <img src="image/maps/fin-del-mundo.jpg" alt="Fin del Mundo">
+                    <img src="image/maps/kings-canyon.jpg" alt="Kings Canyon">
+                    <img src="image/maps/olympus.jpg" alt="Olympus">
+                </div>
+                <button class="boton anterior" onclick="cambiarSlide(-1)">&#10094;</button>
+                <button class="boton siguiente" onclick="cambiarSlide(1)">&#10095;</button>
+                <script src="javascript/carrusel.js"></script>
+
+            </div>
+            
+            
+            <div class="maps-card">
+                <h2>Mapas</h2>
+                <p>Situados en distintos planetas de las Tierras Lejanas, estos vastos paisajes son el escenario principal de los emocionantes Juegos Apex. Cada mapa, con su terreno único y estructuras complejas, desafía a los competidores a crear estrategias ingeniosas y a adaptarse a entornos diversos.</p>
+                <a class="btn" href="mapas.html">
+                    <span>Explora los mapas</span>
+                </a>
+               
+            </div>
+            
+            
+        </section>
+
+
+
+
+
+            
+
+    </main>
+
+
+
+
+ 
+    <footer>
+        <div class="footer-logo">
+            <div class="content-2icon">
+            <img src="image/apex-white-nav-logo.svg" alt="" class="--apex">
+            <img src="image/plataforms-icon/electronic-arts-1.svg" alt="EA Logo" class="--ea">
+            </div>
+            <img src="image/plataforms-icon/respawn-footer-logo-white.svg" alt="Respawn Logo" class="--respawn">
+        </div>
+        
+        <div class="footer-links">
+            <ul class="nav-links-footer">
+                <li><a href="index.html">Inicio</a></li>
+                <li class="dropdown-footer">
+                    <span style="cursor: pointer;">Acerca de</span>
+                    <ul class="dropdown-menu--footer">
+                        <li><a href="conocerLeyendas.html">Leyendas</a></li>
+                        <li><a href="notasparche.html">Notas del parche</a></li>
+                        <li><a href="pcrequeri.html">Requerimientos de PC</a></li>
+                    </ul>
+                </li>
+                <li><a href="https://wa.me/584243792395" target="_blank">Contacto</a></li>
+                <li><a href="terminos.html">Términos</a></li>
+            </ul>
+        </div>
+    
+        
+        <div class="footer-social">
+            <a href="https://www.facebook.com/playapex" target="_blank"><img src="image/icons/facebook-icon.svg" alt="Facebook"></a>
+            <a href="https://www.youtube.com/@playapex" target="_blank"><img src="image/icons/youtube-icon.svg" alt="youtube"></a>
+            <a href="https://www.instagram.com/playapex/" target="_blank"><img src="image/icons/instagram-icon.svg" alt="Instagram"></a>
+        </div>
+        
+        <p>&copy; 2025 Jesus Cespedes. Todos los derechos reservados.</p>
+        
+        <script src="javascript/downmenu-footer.js"></script>
+
+    </footer>
+
+    <script src="javascript/downmenu-footer.js"></script>
+
+    <!-- listo -->
+
+</body>
+
+</html>
+</body>
+</html>

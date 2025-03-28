@@ -1,0 +1,146 @@
+@font-face {
+    font-family: 'titulo';
+    src: url(fonts/font1/Koulen-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'texto';
+    src: url(fonts/font2/Saira-VariableFont_wdth\,wght.ttf);
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    text-decoration: none;
+    font-size: 20px;
+    font-family: "texto";
+  }
+  body {
+    /* background-color: #333; */
+  
+    background-color: #e3dfd6;
+    color: #000;
+    overflow-x: hidden;
+  }
+  
+  
+  
+  h2 {
+    font-size: 2em;
+    font-family: "titulo";
+    letter-spacing: 1.5px;
+  }
+
+  .container{
+
+    margin: 40px auto;
+    padding: 40px;
+    max-width: 953.333px;
+
+  }
+
+  .pcqueri-h{
+
+    font-size: 2em;
+    font-family: "titulo";
+    letter-spacing: 1.5px;
+    text-align: center;
+    }
+
+    .--space{
+
+      margin: 80px 0 0 0;
+
+    } 
+
+
+  .pcqueri-container{
+
+    margin: 60px auto;
+    padding: 40px;
+  }
+  
+  table {
+    margin: 0 auto;
+    border-collapse: collapse; /* Combina los bordes en una sola línea */
+}
+
+thead, tbody, tr, td {
+    border-bottom: 1px solid #000;
+    padding: 30px;
+
+}
+
+
+.--parche{
+
+  list-style:square ;
+
+}
+
+.--parche ul{
+
+  margin-left:30px ;
+  
+}
+
+
+.parche-img{
+  margin: 30px ;
+  width: 800px;
+  box-shadow: 0 0 12px 0 #000000;
+  transition: transform 0.2s ease; 
+}
+
+.parche-img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px 0 #000000; 
+}
+
+
+
+.front-container{
+
+  background-image: url(image/pcrequeri.webp);
+  
+  width: 100%;
+  height: 40vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+background-position: center;
+
+
+
+
+
+}
+
+
+.opaco{
+
+  
+  background-color: #101010a8;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  align-content: center;
+
+
+
+}
+
+li::marker{
+
+color: #b93038;
+  
+}
+
+.front-h2{
+
+  letter-spacing: 1px;
+
+
+}

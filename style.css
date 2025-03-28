@@ -1,0 +1,314 @@
+@font-face {
+    font-family: 'titulo';
+    src: url(fonts/font1/Koulen-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'texto';
+    src: url(fonts/font2/Saira-VariableFont_wdth\,wght.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: "texto";
+}
+body {
+  /* background-color: #333; */
+
+  background-color: #e3dfd6;
+  color: #f4f4f4;
+  overflow-x: hidden;
+}
+
+
+
+h2 {
+  font-size: 2em;
+  font-family: "titulo";
+  letter-spacing: 1.5px;
+}
+
+
+
+
+
+
+.presentation-background-container {
+  width: 100%;
+  height: 100%;
+  background-color: #10101096;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #f4f4f4;
+  min-height: 500px;
+  position: relative;
+  z-index: 2;
+
+
+}
+
+
+
+
+
+.plataforms h2 {
+  font-size: 1.3em;
+
+}
+
+.plataforms p{
+
+  font-size: 1.2em;
+  font-weight: bold;
+
+}
+
+.plataforms{
+
+  margin-top: 20px;
+
+
+}
+
+
+
+.presentation-container h1 {
+  margin-top: 20px;
+}
+
+.presentation-container h1 {
+  max-width: 700px;
+  font-size: 1.2em;
+}
+
+.presentation-container p {
+  max-width: 700px;
+  font-size: 1.2em;
+}
+
+.plataforms img {
+  width: 40px;
+
+}
+
+.characters-container,.maps-container {
+  margin: 60px auto;
+
+  padding: 20px;
+  box-shadow: 0 0 50px 0 #f4f4f411;
+  /* max-width: 1450px; */
+  max-width: 100%;
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 20px 50px;
+  color: #000000;
+  background-color: #f4f4f47a;
+background-color: #f2f2f2;
+
+
+
+
+}
+.characters-container img {
+  width: 600px;
+
+}
+.charters-card-container p {
+
+  margin-bottom: 30px;
+  
+}
+
+
+
+.charters-card-container {
+  display: inline-block;
+  padding: 10px;
+}
+
+.btn {
+  /* background-color: #ff0000; */
+  background-color: #A4373D;
+  color: #f4f4f4;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 16px;
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #f4f4f4;
+  color: #A4373D;
+  border: 2px solid;
+}
+
+.presentation-container{
+
+  position: relative;
+
+}
+
+video{
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+
+.notices{
+
+  margin: 60px 0;
+  color: #000000;
+  text-align: center;
+  min-height: 40vh;
+
+}
+
+.notices h2{
+
+  padding-bottom: 25px;
+  color: #000000;
+
+}
+
+
+.notices img{
+
+  width: 400px;
+
+
+}
+
+
+
+.notices-card-container{
+
+  display: flex;
+  justify-content: space-around;
+
+
+}
+
+.notices-card{
+
+  display: inline-block;
+  font-family: "texto";
+  max-width: 400px;
+  text-align: start;
+  padding: 20px;
+
+}
+.notices-card h2{
+
+  font-family: "texto";
+  font-size: 1em;
+
+
+}
+
+.notices-card {
+  background-color: #f2f2f286;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: 0.1s ease;
+  
+}
+
+
+/* Efecto de hover */
+.notices-card:hover {
+  transform: translateY(-10px); /* Movimiento sutil */
+
+}
+
+/* Imágenes dentro de las tarjetas */
+.notices-card img {
+  width: 100%; /* Toma todo el ancho del contenedor */
+  height: 350px; /* Más grande que antes */
+  object-fit: cover; /* Para que la imagen no se deforme */
+  border-bottom: 4px solid #B93038; /* Línea roja decorativa */
+}
+
+
+.maps-container{
+
+  padding-left: 50px;
+  
+}
+
+.maps-card p{
+
+  margin-bottom: 30px;
+
+}
+
+.maps-card{
+
+  margin: 0 20px 0 70px;
+
+}
+
+
+/*carrusel*/
+.carrusel {
+
+  display: flex;
+  overflow: hidden;
+  width: 100%; /* Aumenta el tamaño del carrusel */
+  min-width: 540px; /* Opcional: establece un ancho máximo */
+  position: relative;
+  box-shadow: 0 0 10px 0 #000000;
+}
+
+.imagenes img {
+  width: 100%; /* Ajusta el ancho al contenedor */
+  height: 350px; /* Cambia la altura según el tamaño que desees */
+  object-fit: cover; /* Asegúrate de que las imágenes se adapten bien */
+  flex-shrink: 0;
+
+}
+
+.imagenes {
+  display: flex;
+  transition: transform 0.2s ease-in-out;
+}
+
+.boton {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #101010c8;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index:4;
+}
+
+.anterior {
+  left: 10px;
+}
+
+.siguiente {
+  right: 10px;
+}
+
+
+
+

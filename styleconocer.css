@@ -1,0 +1,132 @@
+@font-face {
+    font-family: 'titulo';
+    src: url(fonts/font1/Koulen-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'texto';
+    src: url(fonts/font2/Saira-VariableFont_wdth\,wght.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: "texto";
+}
+body {
+  /* background-color: #333333; */
+
+  background-color: #1a1a1a;
+  color: #f4f4f4;
+  overflow-x: hidden;
+}
+
+
+
+
+h2,h1{
+  font-size: 2em;
+  font-family: "titulo";
+  letter-spacing: 1.5px;
+}
+
+/*titulo pricipal*/
+
+.card-leyend{
+
+    background-image: url(image/apex-charters-much-logo.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+    align-content: center;
+    width: 100%;
+    height: 40vh;
+
+    
+}
+
+.opaco{
+
+  background-color: #101010a8;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  align-content: center;
+
+}
+
+
+/* Contenedor principal de las tarjetas */
+.card-charter-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Ajustado para contenedores estándar */
+  gap: 20px;
+  padding: 50px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Estilo base de las tarjetas */
+.card-charter {
+  background-color: #99999918;
+  border-radius: 12px;
+  overflow: hidden;
+  text-align: center;
+  transition: 0.1s ease;
+  
+}
+
+
+/* Efecto de hover */
+.card-charter:hover {
+  transform: translateY(-10px); /* Movimiento sutil */
+
+}
+
+/* Imágenes dentro de las tarjetas */
+.card-charter img {
+  width: 100%; /* Toma todo el ancho del contenedor */
+  height: 350px; /* Más grande que antes */
+  object-fit: cover; /* Para que la imagen no se deforme */
+  border-bottom: 3px solid #B93038; /* Línea roja decorativa */
+}
+
+/* Texto del personaje */
+.card-charter h2 {
+  font-size: 1.5em;
+  color: #f4f4f4; /* Texto blanco */
+  margin: 15px 0;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  padding: 10px;
+}
+
+
+
+/*productos*/
+
+.banner{
+
+  
+  background-image: url(image/productos/banner_collection.jpg);
+
+  width: 100%;
+  height: 40vh;
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50%;
+
+
+
+}
+
